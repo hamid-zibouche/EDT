@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    /* background: #f2f2f2; */
+    margin-top: 100px;
+    position: relative;
+    background-color: rgb(226, 237, 235);
+}
+
+header .impression i {
+    font-size: 40px;
+}
+
+header .impression i:hover {
+    cursor: pointer;
+    color: green;
+}
+
+#preced {
+    width: 140px;
+    height: 30px;
+    margin-left: 60px;
+    margin-top: 10px;
+    float: left;
+    color: white;
+    font-weight: bold;
+    background: rgb(40, 112, 255);
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#preced:hover {
+    background: rgba(40, 112, 255, 0.421);
+    cursor: pointer;
+}
+
+main {
+    width: auto;
+    height: auto;
+}
+
+header {
+    margin-top: 100px;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    height: 145px;
+}
+
+#sem {
+    color: blue;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 15PX;
+    letter-spacing: 3px;
+    display: block;
+}
+
+header h1 {
+    font-weight: normal;
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+
+header span {
+    margin-right: 30px;
+    color: blue;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    color: white;
+    margin-bottom: 10px;
+}
+
+table thead {
+    height: 40px;
+    background: rgb(47, 51, 55);
+}
+
+table tr {
+    border-bottom: 1px solid rgb(81, 81, 81);
+}
+
+table .heur {
+    /* border-right: 1px solid silver; */
+    width: 150px;
+    text-align: center;
+    padding-left: 10px;
+}
+
+table .contenue {
+    padding: 5px 10px;
+}
+
+table #modules {
+    width: 100%;
+}
+
+table #type {
+    width: 49%;
+    float: right;
+}
+
+table #salle {
+    width: 49%;
+    float: left;
+}
+
+table #enseignant {
+    width: 100%;
+    float: left;
+}
+
+table input {
+    margin: 5px 0;
+    width: 100%;
+}
+
+table .valider {
+    height: 25px;
+    color: white;
+    background-color: rgb(40, 112, 255);
+    border: none;
+    font-weight: bold;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    cursor: pointer;
+}
+
+.loader {
+    height: 25px;
+    color: white;
+    background: url(../img/loader2.gif) 10px 0 no-repeat;
+    background-color: rgb(40, 112, 255);
+    border: none;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    cursor: pointer;
+}
+
+.reussi {
+    height: 25px;
+    color: white;
+    background-color: rgb(0, 255, 51);
+    border: none;
+    font-weight: bold;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    cursor: pointer;
+}
+
+table tr>td {
+    position: relative;
+    width: 90px;
+}
+
+td {
+    border-right: 1px solid rgb(81, 81, 81);
+}
+
+table tr>td>p {
+    position: absolute;
+    top: 10px;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(odd) {
+    background: rgb(65, 67, 73);
+}
+
+tbody tr:nth-child(even) {
+    background: rgb(47, 51, 55);
+}
+
+tbody select {
+    border-radius: 0;
+    outline: none;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(56, 60, 64);
+    text-transform: uppercase;
+}
+
+form input[id=save],
+input[id=clear] {
+    width: 100px;
+    height: 30px;
+    background-color: steelblue;
+    color: white;
+    position: relative;
+    float: left;
+}
+
+.action {
+    display: flex;
+}
+
+
+/* button {
+    position: relative;
+    left: 832px;
+    width: 178px;
+    margin-top: 15px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    font-weight: bold;
+} */
+
+button[id=save] {
+    background: rgb(40, 112, 255);
+    color: white;
+}
+
+button[id=clear] {
+    background: rgb(255, 242, 2);
+    color: black;
+}
+
+button[id=save]:hover {
+    cursor: pointer;
+    background: rgba(40, 112, 255, 0.422);
+}
+
+button[id=clear]:hover {
+    cursor: pointer;
+    background: rgba(255, 242, 2, 0.465);
+}
+
+footer {
+    width: 100%;
+    height: 25px;
+    background: black;
+    color: white;
+    text-align: center;
+    clear: both;
+    margin-bottom: 0;
+}
+
+.save {
+    position: relative;
+    left: 832px;
+    width: 178px;
+    margin-top: 15px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    background: rgb(40, 112, 255);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 5px;
+}
+
+.save:hover {
+    cursor: pointer;
+    background: rgba(40, 112, 255, 0.422);
+}
+
+
+/* td div span {
+    display: inline-block;
+} */
+
+td div {
+    display: inline-block;
+    text-align: center;
+    margin: 3px 3px;
+}
+
+
+/* span>span>span {
+    font-weight: 650;
+} */
+
+p {
+    display: inline-block;
+    text-align: center;
+}
+
+div p span {
+    display: inline-block;
+}
+
+div p span span {
+    font-weight: 650;
+}
+
+td {
+    text-align: center;
+}

@@ -1,0 +1,359 @@
+body {
+    position: relative;
+}
+
+header {
+    margin-top: 100px;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 15PX;
+    letter-spacing: 3px;
+}
+
+header h1 {
+    font-weight: normal;
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+
+header span {
+    margin-right: 30px;
+    color: blue;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 20px auto;
+    color: white;
+    z-index: 0;
+}
+
+table thead {
+    height: 40px;
+    background: rgb(47, 51, 55);
+}
+
+table tr {
+    border-bottom: 1px solid rgb(81, 81, 81);
+    text-transform: capitalize;
+    border-top: none;
+}
+
+thead th {
+    /* border-right: 1px solid silver; */
+    width: 150px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+table tr>td {
+    position: relative;
+    width: 90px;
+    height: 35px;
+    padding-left: 10px;
+}
+
+table tr>td>p {
+    position: absolute;
+    top: 10px;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(odd) {
+    background: rgb(65, 67, 73);
+}
+
+tbody tr:nth-child(even) {
+    background: rgb(47, 51, 55);
+}
+
+#formation_name {
+    background: #181b25;
+    height: 30px;
+}
+
+i[class="far fa-trash-alt"] {
+    display: inline;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+i[class="far fa-trash-alt"]:hover {
+    color: rgb(255, 0, 0);
+    display: inline;
+}
+
+i[class="fas fa-pencil-alt"] {
+    display: inline;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+i[class="fas fa-pencil-alt"]:hover {
+    color: green;
+}
+
+i[class="far fa-calendar-alt"] {
+    display: inline;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+i[class="far fa-calendar-alt"]:hover {
+    color: silver;
+}
+
+i:hover {
+    cursor: pointer;
+}
+
+button {
+    width: 25px;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
+
+table select {
+    background-color: rgb(65, 67, 73);
+    color: white;
+    width: 50%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-color: slategray;
+}
+
+.client-fenetre-confirmation,
+.reservation-fenetre-confirmation,
+.voyage-fenetre-confirmation,
+.user-fenetre-confirmation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    animation: anim_opacity .5s;
+}
+
+.client-fenetre-confirmation .boite,
+.reservation-fenetre-confirmation .boite,
+.voyage-fenetre-confirmation .boite,
+.user-fenetre-confirmation .boite {
+    position: relative;
+    background-color: #fff;
+    border-radius: 5px;
+    width: 500px;
+    animation: anim_boite .5s;
+}
+
+.client-fenetre-confirmation[aria-hidden="true"],
+.reservation-fenetre-confirmation[aria-hidden="true"],
+.voyage-fenetre-confirmation[aria-hidden="true"],
+.user-fenetre-confirmation[aria-hidden="true"] {
+    animation: anim_opacity2 .3s;
+}
+
+.client-fenetre-confirmation[aria-hidden="true"] .boite,
+.reservation-fenetre-confirmation[aria-hidden="true"] .boite,
+.voyage-fenetre-confirmation[aria-hidden="true"] .boite,
+.user-fenetre-confirmation[aria-hidden="true"] .boite {
+    animation: slideToButtom .2s;
+}
+
+.client-fenetre-confirmation .boite .fermer,
+.reservation-fenetre-confirmation .boite .fermer,
+.voyage-fenetre-confirmation .boite .fermer,
+.user-fenetre-confirmation .boite .fermer {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.client-fenetre-confirmation .boite .fermer:hover,
+.reservation-fenetre-confirmation .boite .fermer:hover,
+.voyage-fenetre-confirmation .boite .fermer:hover,
+.user-fenetre-confirmation .boite .fermer:hover {
+    color: red;
+}
+
+.client-fenetre-confirmation .boite-header,
+.reservation-fenetre-confirmation .boite-header,
+.voyage-fenetre-confirmation .boite-header,
+.user-fenetre-confirmation .boite-header {
+    padding: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+}
+
+.client-fenetre-confirmation .boite-header .titre,
+.reservation-fenetre-confirmation .boite-header .titre,
+.voyage-fenetre-confirmation .boite-header .titre,
+.user-fenetre-confirmation .boite-header .titre {
+    color: rgb(62, 55, 55);
+    font-size: 16px;
+}
+
+.client-fenetre-confirmation .boite-btns,
+.reservation-fenetre-confirmation .boite-btns,
+.voyage-fenetre-confirmation .boite-btns,
+.user-fenetre-confirmation .boite-btns {
+    float: right;
+    padding: 15px;
+}
+
+.client-fenetre-confirmation .boite-btns button,
+.reservation-fenetre-confirmation .boite-btns button,
+.voyage-fenetre-confirmation .boite-btns button,
+.user-fenetre-confirmation .boite-btns button {
+    padding: 10px;
+    margin-left: 2px;
+    width: 100px;
+}
+
+.client-fenetre-confirmation .oui,
+.reservation-fenetre-confirmation .oui,
+.voyage-fenetre-confirmation .oui,
+.user-fenetre-confirmation .oui {
+    outline: none;
+    border: 2px solid rgb(231, 34, 34);
+    background-color: rgb(233, 48, 48);
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 3px;
+}
+
+.client-fenetre-confirmation .oui:hover,
+.reservation-fenetre-confirmation .oui:hover,
+.voyage-fenetre-confirmation .oui:hover,
+.user-fenetre-confirmation .oui:hover {
+    border: 2px solid rgb(255, 0, 0);
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
+    transition: .2s;
+}
+
+.client-fenetre-confirmation .annuler,
+.reservation-fenetre-confirmation .annuler,
+.voyage-fenetre-confirmation .annuler,
+.user-fenetre-confirmation .annuler {
+    outline: none;
+    border: 2px solid rgb(92, 72, 72);
+    background-color: rgb(96, 77, 77);
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 3px;
+}
+
+.client-fenetre-confirmation .annuler:hover,
+.reservation-fenetre-confirmation .annuler:hover,
+.voyage-fenetre-confirmation .annuler:hover,
+.user-fenetre-confirmation .annuler:hover {
+    border: 2px solid rgb(96, 77, 77);
+    background-color: white;
+    color: rgb(96, 77, 77);
+}
+
+.client-fenetre-confirmation .message,
+.reservation-fenetre-confirmation .message,
+.voyage-fenetre-confirmation .message,
+.user-fenetre-confirmation .message {
+    display: flex;
+    padding: 30px 10px 20px 20px;
+}
+
+.client-fenetre-confirmation .message p,
+.reservation-fenetre-confirmation .message p,
+.voyage-fenetre-confirmation .message p,
+.user-fenetre-confirmation .message p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.client-fenetre-confirmation .message i,
+.reservation-fenetre-confirmation .message i,
+.voyage-fenetre-confirmation .message i,
+.user-fenetre-confirmation .message i {
+    color: red;
+    font-size: 50px;
+    margin-right: 15px;
+}
+
+@keyframes anim_opacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes anim_boite {
+    from {
+        transform: translateY(-50px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+
+
+/* animation pour la fermuteur de la boite */
+
+@keyframes anim_opacity2 {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes slideToButtom {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(50px);
+    }
+}
+
+.border {
+    border: 2px solid rgb(160, 43, 43);
+}
+
+.alert p {
+    background-color: rgba(152, 255, 152, 0.62);
+    text-align: center;
+}
+
+.alert {
+    background-color: rgba(152, 255, 152, 0.62);
+    border: 1px solid #58c258;
+    border-radius: 10px;
+    width: 72%;
+    margin: auto;
+    padding: 12px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}

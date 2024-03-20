@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@200&family=Tapestry&display=swap');
+*{
+    box-sizing: border-box;
+}
+img{
+    height: 20px;
+    width: 20px;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(214, 214, 214);
+}
+.container{
+    display: flex;
+    justify-content: center;
+     align-items: center; 
+    width: 400px;
+    height: 250px;
+  border-radius: 2%;
+  background-color: rgb(253, 253, 253);
+box-shadow: 5px 8px 5px rgb(83, 81, 81);
+
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+    
+}
+
+h1{
+    
+    font-family: 'Montserrat',sans-serif;
+    text-align: center;
+    font-size: 35px;
+    color: rgb(8, 138, 84);
+    
+}
+#precedent{
+    margin-bottom: 20px;
+    background-color: rgb(189, 26, 26);  
+    color: aliceblue;
+    border: 0;
+}
+button{
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;}

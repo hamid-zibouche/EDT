@@ -1,0 +1,17 @@
+i[class="fa fa-trash fa-1x red-icon"] {
+    color: rgb(238, 68, 68);
+  }
+  
+  i[class="fa fa-trash fa-1x red-icon"]:hover {
+    cursor: pointer;
+    color: rgba(238, 68, 68, 0.8);
+  }
+  
+  h2 {
+    margin-top: 10px;
+  }
+  
+  .container {
+    margin-top: 20px;
+  }
+  

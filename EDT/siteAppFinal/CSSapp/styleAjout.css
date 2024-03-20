@@ -1,0 +1,11 @@
+.container {
+    margin: 0 30%;
+    margin-top: 20px;
+}
+
+.alert-success {
+    color: #0f5132;
+    background-color: #d1e7dd;
+    border-color: #badbcc;
+    width: 455px;
+}

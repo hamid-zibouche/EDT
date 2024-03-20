@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    /* background: #f2f2f2; */
+    position: relative;
+    background-color: rgb(226, 237, 235);
+}
+
+main {
+    width: auto;
+    height: auto;
+}
+
+header {
+    width: 100%;
+    height: 180px;
+    text-align: center;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 15PX;
+    letter-spacing: 3px;
+}
+
+#nomprenom {
+    display: block;
+}
+
+header h1 {
+    font-weight: normal;
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+
+header span {
+    margin-right: 30px;
+    color: blue;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+}
+
+table thead {
+    height: 40px;
+    background: rgb(203, 210, 218);
+}
+
+table tr {
+    border-bottom: 1px solid rgb(142, 142, 142);
+}
+
+table .heur {
+    /* border-right: 1px solid silver; */
+    width: 150px;
+    text-align: center;
+    padding-left: 10px;
+}
+
+table .contenue {
+    padding: 5px 10px;
+}
+
+table #modules {
+    width: 100%;
+}
+
+table #type {
+    width: 49%;
+    float: right;
+}
+
+table #salle {
+    width: 49%;
+    float: left;
+}
+
+table tr>td {
+    position: relative;
+    width: 90px;
+}
+
+td {
+    border-right: 1px solid rgb(81, 81, 81);
+}
+
+table tr>td>p {
+    position: absolute;
+    top: 10px;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(odd) {
+    background: rgb(244, 244, 244);
+}
+
+tbody tr:nth-child(even) {
+    background: rgb(232, 232, 232);
+}
+
+tbody select {
+    border-radius: 0;
+    outline: none;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(56, 60, 64);
+    text-transform: uppercase;
+}
+
+
+/* button {
+    position: relative;
+    left: 832px;
+    width: 178px;
+    margin-top: 15px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    font-weight: bold;
+} */
+
+
+/* span>span>span {
+    font-weight: 650;
+} */
+
+p {
+    display: inline-block;
+    text-align: center;
+}
+
+div p span {
+    display: inline-block;
+}
+
+div p span span {
+    font-weight: 650;
+}
+
+td {
+    text-align: center;
+}
+
+#title_P {
+    margin-bottom: 130px;
+}
+
+#title_P div p {
+    display: block;
+}
+
+#logo_P {
+    background-image: url(../img/Logo_Univ_Bejaia.png);
+    background-repeat: no-repeat;
+    background-position: 457.5px;
+    height: 70px;
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#univ {
+    margin-bottom: 20px;
+}
